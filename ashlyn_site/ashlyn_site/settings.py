@@ -48,7 +48,7 @@ SECRET_KEY = find_or_create_secret_key()
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["chacha68600.pythonanywhere.com", "127.0.0.1"]
 
