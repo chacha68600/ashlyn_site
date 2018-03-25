@@ -39,65 +39,84 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle w3-display-right w3-text-white" style="white-space:nowrap;">
-    <h1>Web Graphic Designer</h1>
-      <h3>Stop wasting valuable time with projects ust isn't you</h3>
-      <button>Click to see my CV</button>
+    <h1>Graphic Web Designer</h1>
+      <h3>I am still working on building my portfolio website. :)</h3>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
+  <p class="w3-center"><em>I am a graphic web desginer with 7 years experience.</em></p>
   <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
     qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Ashlyn</b></p><br>
+      <img src="{% static 'home/imgs/ashlyn.jpg' %}" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      <p>
+          Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        
+        <p>
+           <br><a href="{% url 'home:resume' %}"><button class="w3-button w3-block w3-dark-grey" type="button">Click to see CV (not available now)</button></a>
+        </p>
+      </p>
+
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-</div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
+    <span class="w3-xlarge">0+</span><br>
     Partners
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
+    <span class="w3-xlarge">0+</span><br>
     Projects Done
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
+    <span class="w3-xlarge">0+</span><br>
     Happy Clients
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
+    <span class="w3-xlarge">0+</span><br>
     Meetings
   </div>
+    </div>
+
+    <div class="w3-row-padding w3-center" style="margin-top:32px">    
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    </div>
 </div>
+
+
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -107,97 +126,129 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class="w3-content w3-container w3-row-padding" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="{% static 'home/imgs/work1.jpg' %}" style="width:100%" onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-opacity" alt="The mist over the mountains">
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-third">
+        <p>
+            <img src="{% static 'home/imgs/work1.jpg' %}" style="width:100%" onclick="document.getElementById('modal1').style.display='block'" class="w3-hover-opacity" alt="The mist over the mountains">
+        </p>
+        <p>
+            <img src="{% static 'home/imgs/work2.jpg' %}" style="width:100%" onclick="document.getElementById('modal2').style.display='block'" class="w3-hover-opacity" alt="Coffee beans">
+        </p>
+            <img src="{% static 'home/imgs/work3.jpg' %}" style="width:100%" onclick="document.getElementById('modal3').style.display='block'" class="w3-hover-opacity" alt="Bear closeup">
+        <p>
+        <img src="{% static 'home/imgs/work4.jpg' %}" style="width:100%" onclick="document.getElementById('modal4').style.display='block'" class="w3-hover-opacity" alt="Bear closeup">
+        </p>
     </div>
 
-    <div class="w3-col m3">
-      <img src="{% static 'home/imgs/work2.jpg' %}" style="width:100%" onclick="document.getElementById('modal02').style.display='block'" class="w3-hover-opacity" alt="Coffee beans">
+    <div class="w3-third">
+        <p>
+      <img src="{% static 'home/imgs/work11.jpg' %}" style="width:100%" onclick="document.getElementById('modal11').style.display='block'" class="w3-hover-opacity" alt="Quiet ocean">
+        </p>
+        <p>
+      <img src="{% static 'home/imgs/work22.jpg' %}" style="width:100%" onclick="document.getElementById('modal22').style.display='block'" class="w3-hover-opacity" alt="The mist">
+        </p>
+        <p>
+      <img src="{% static 'home/imgs/work33.jpg' %}" style="width:100%" onclick="document.getElementById('modal33').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
+        </p>
+        <p>
+      <img src="{% static 'home/imgs/work44.jpg' %}" style="width:100%" onclick="document.getElementById('modal44').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
+        </p>
     </div>
 
-    <div class="w3-col m3">
-      <img src="{% static 'home/imgs/work3.jpg' %}" style="width:100%" onclick="document.getElementById('modal03').style.display='block'" class="w3-hover-opacity" alt="Bear closeup">
+    <div class="w3-third">
+        <p>
+      <img src="{% static 'home/imgs/work111.jpg' %}" style="width:100%" onclick="document.getElementById('modal111').style.display='block'" class="w3-hover-opacity" alt="Quiet ocean">
+</p>
+        <p>
+      <img src="{% static 'home/imgs/work222.jpg' %}" style="width:100%" onclick="document.getElementById('modal222').style.display='block'" class="w3-hover-opacity" alt="The mist">
+        </p>
+        <p>
+      <img src="{% static 'home/imgs/work333.jpg' %}" style="width:100%" onclick="document.getElementById('modal333').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
+        </p>
+        <p>
+      <img src="{% static 'home/imgs/work444.jpg' %}" style="width:100%" onclick="document.getElementById('modal444').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
+        </p>
     </div>
 
-    <div class="w3-col m3">
-      <img src="{% static 'home/imgs/work4.jpg' %}" style="width:100%" onclick="document.getElementById('modal04').style.display='block'" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="{% static 'home/imgs/work5.jpg' %}" style="width:100%" onclick="document.getElementById('modal05').style.display='block'" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="{% static 'home/imgs/work6.jpg' %}" style="width:100%" onclick="document.getElementById('modal06').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="{% static 'home/imgs/work7.jpg' %}" style="width:100%" onclick="document.getElementById('modal07').style.display='block'" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="{% static 'home/imgs/work8.jpg' %}" style="width:100%" onclick="document.getElementById('modal08').style.display='block'" class="w3-hover-opacity" alt="Sailing">
-    </div>
-  </div>
-    <div class="w3-center">
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-    </div>
 </div>
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+<div id="modal1" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/work1-1.jpg'%}">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal1.jpg'%}">
   </div>
 </div>
 
-<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+<div id="modal2" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/work2-1.jpg'%}">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal2.jpg'%}">
   </div>
 </div>
 
-<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+<div id="modal3" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/work3-1.jpg'%}">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal3.jpg'%}">
   </div>
 </div>
 
-<div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+<div id="modal4" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/work4-1.jpg'%}">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal4.jpg'%}">
   </div>
 </div>
 
-<div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+
+<div id="modal11" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/work5-1.jpg'%}">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal11.jpg'%}">
   </div>
 </div>
 
-<div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+<div id="modal22" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/work6-1.jpg'%}">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal22.jpg'%}">
   </div>
 </div>
 
-<div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+<div id="modal33" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/work7-1.jpg'%}">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal33.jpg'%}">
   </div>
 </div>
 
-<div id="modal08" class="w3-modal" onclick="this.style.display='none'">
+<div id="modal44" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
-    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/work8-1.jpg'%}">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal44.jpg'%}">
+  </div>
+</div>
+
+
+<div id="modal111" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal111.jpg'%}">
+  </div>
+</div>
+
+<div id="modal222" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal222.jpg'%}">
+  </div>
+</div>
+
+<div id="modal333" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal333.jpg'%}">
+  </div>
+</div>
+
+<div id="modal444" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal444.jpg'%}">
   </div>
 </div>
 
@@ -264,7 +315,7 @@
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://joachim910626.pythonanywhere.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">JOHN LEE</a></p>
+  <p>Powered by <a href="https://joachim910626.pythonanywhere.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">Ashlyn</a></p>
 </footer>
  
    <!-- Add Google Maps -->
