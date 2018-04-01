@@ -16,6 +16,12 @@ body, html {
     background-size: cover;
 }
 
+.bgimg-4 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url('../imgs/about.jpg');
@@ -32,6 +38,12 @@ body, html {
 .bgimg-3 {
     background-image: url("../imgs/contact.jpg");
     min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-4 {
+    background-image: url("../imgs/graphicwebdesigner.jpg");
+    min-height: 500px;
 }
 
 .w3-wide {

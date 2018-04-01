@@ -89,6 +89,7 @@
     <Content Include="home\static\home\imgs\work7.jpg" />
     <Content Include="home\static\home\imgs\work8-1.jpg" />
     <Content Include="home\static\home\imgs\work8.jpg" />
+    <Content Include="home\templates\home\resume.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="home\static\home\content\bootstrap.css" />

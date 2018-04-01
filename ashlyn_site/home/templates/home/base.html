@@ -7,86 +7,70 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="{% static 'home/imgs/logo.png' %}" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="{% static 'home/content/base.css' %}">
 <script src="{% static 'home/scripts/modernizr-2.6.2.js' %}"></script>
 
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+        <a href="#home" class="w3-bar-item w3-button"><img src="{% static 'home/imgs/logonav.png' %}"> HOME</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-quarter"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-quarter"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-quarter"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+      </div>
+    </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+        <p class="w3-center">
+            <img src="{% static 'home/imgs/logo.png' %}" alt="my_logo"><br />
+            <font size="6">Welcome to Ashlyn's Website</font>
+        </p>
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-middle w3-display-right w3-text-white" style="white-space:nowrap;">
-    <h1>Graphic Web Designer</h1>
-      <h3>I am still working on building my portfolio website. :)</h3>
-  </div>
+<!-- About header background -->
+<div class="bgimg-4 w3-display-container">
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
+<div class="w3-content w3-container w3-padding-32" id="about">
+  <h3 class="w3-center">About Myself</h3>
   <p class="w3-center"><em>I am a graphic web desginer with 7 years experience.</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p class="w3-center">
+      I am a graphic web designer with experiences of 7 years, seeking for a full-time job and freelance projects.<br />
+      Throughout my career, I have done uncountable number of projects in design companies as well as my own freelance works.<br />
+      I am willing to contribute my skills and sense of design to your company, or to an individual project as well.<br />
+      Please contact me anytime if you think that I am an apporpriate designer in your company or for your project.
+  </p>
   <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Ashlyn</b></p><br>
-      <img src="{% static 'home/imgs/ashlyn.jpg' %}" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>
-          Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        
-        <p>
-           <br><a href="{% url 'home:resume' %}"><button class="w3-button w3-block w3-dark-grey" type="button">Click to see CV (not available now)</button></a>
-        </p>
-      </p>
-
-    </div>
-  </div>
-
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <p class="w3-center">
+     <br><a href="{% url 'home:resume' %}"><button class="w3-button w3-white w3-text-black w3-border w3-border-black" type="button"><strong>&nbsp &nbsp &nbsp &nbsp Resume &nbsp &nbsp &nbsp &nbsp</strong></button></a>
+    </p>
+    <br /><br />
+      <div class="w3-row w3-center w3-dark-grey">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">0+</span><br>
-    Partners
+    <span class="w3-xlarge">7+</span><br>
+    Years of Experience
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">0+</span><br>
-    Projects Done
+    <span class="w3-xlarge">20+</span><br>
+    Projects Done as a freelancer
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">0+</span><br>
+    <span class="w3-xlarge">15+</span><br>
     Happy Clients
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">0+</span><br>
+    <span class="w3-xlarge">15+</span><br>
     Meetings
   </div>
     </div>
@@ -95,26 +79,30 @@
   <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
     <div class="w3-quarter">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p class="w3-large">Web Design</p>
+      <p>By using Photoshop, detailed pages of a website such as an online shopping website, editing photos of clothing, banner design</p>
     </div>
     <div class="w3-quarter">
       <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p class="w3-large">Graphic Design</p>
+      <p>By using Illustrator, graphic pattern design, business card, posters, menus, characters, logos</p>
     </div>
     <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <i class="fa fa-scissors w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Fashion Design</p>
+      <p>Majored in fashion design, professional understanding in graphic and web designs of clothing</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion and Reponsibility</p>
+      <p>Passionate to design and reponsible for my works to meet end users' expectations</p>
     </div>
     </div>
-</div>
+
+    </div>
+  </div>
+
+
 
 
 
@@ -126,9 +114,9 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-row-padding" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+<div class="w3-content w3-container w3-padding-32" id="portfolio">
+  <h3 class="w3-center">My work</h3>
+  <p class="w3-center"><em>Here are some of my latest works as a freelance designer.<br> Click on the images to see details of my works.</em></p><br>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-third">
@@ -260,8 +248,8 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I Stay</h3>
+<div class="w3-content w3-container w3-padding-32" id="contact">
+  <h3 class="w3-center">My Contact</h3>
   <p class="w3-center"><em>I'd love your feedback!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
@@ -311,9 +299,9 @@
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="http://facebook.com/her_suitcase"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="http://instagram.com/her_suitcase"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="http://linkedin.com/in/her_suitcase"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
   <p>Powered by <a href="https://joachim910626.pythonanywhere.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">Ashlyn</a></p>
 </footer>
