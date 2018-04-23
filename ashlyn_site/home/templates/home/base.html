@@ -43,9 +43,9 @@
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-32" id="about">
   <h3 class="w3-center">About Myself</h3>
-  <p class="w3-center"><em>I am a graphic web desginer with 7 years experience.</em></p>
+  <p class="w3-center"><em>I am a graphic web desginer with 6 years experience.</em></p>
   <p class="w3-center">
-      I am a graphic web designer with experiences of 7 years, seeking for a full-time job and freelance projects.<br />
+      I am a graphic web designer with experiences of 6 years, seeking for a full-time job and freelance projects.<br />
       Throughout my career, I have done uncountable number of projects in design companies as well as my own freelance works.<br />
       I am willing to contribute my skills and sense of design to your company, or to an individual project as well.<br />
       Please contact me anytime if you think that I am an apporpriate designer in your company or for your project.
@@ -58,7 +58,7 @@
     <br /><br />
       <div class="w3-row w3-center w3-dark-grey">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">7+</span><br>
+    <span class="w3-xlarge">6+</span><br>
     Years of Experience
   </div>
   <div class="w3-quarter w3-section">
@@ -120,37 +120,53 @@
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-third">
-        <p>
+        <p class="w3-container w3-padding-small">
+            <img src="{% static 'home/imgs/work0.jpg' %}" style="width:100%" onclick="document.getElementById('modal0').style.display='block'" class="w3-hover-opacity" alt="The mist over the mountains">
+        </p>
+        <p class="w3-container w3-padding-small">
             <img src="{% static 'home/imgs/work1.jpg' %}" style="width:100%" onclick="document.getElementById('modal1').style.display='block'" class="w3-hover-opacity" alt="The mist over the mountains">
-  
+        </p>
+        <p class="w3-container w3-padding-small">
             <img src="{% static 'home/imgs/work2.jpg' %}" style="width:100%" onclick="document.getElementById('modal2').style.display='block'" class="w3-hover-opacity" alt="Coffee beans">
-  
+        </p>
             <img src="{% static 'home/imgs/work3.jpg' %}" style="width:100%" onclick="document.getElementById('modal3').style.display='block'" class="w3-hover-opacity" alt="Bear closeup">
-    
+        <p class="w3-container w3-padding-small">
         <img src="{% static 'home/imgs/work4.jpg' %}" style="width:100%" onclick="document.getElementById('modal4').style.display='block'" class="w3-hover-opacity" alt="Bear closeup">
         </p>
     </div>
 
     <div class="w3-third">
-        <p>
+        <p class="w3-container w3-padding-small">
+            <img src="{% static 'home/imgs/work00.jpg' %}" style="width:100%" onclick="document.getElementById('modal00').style.display='block'" class="w3-hover-opacity" alt="The mist over the mountains">
+        </p>
+        <p class="w3-container w3-padding-small">
       <img src="{% static 'home/imgs/work11.jpg' %}" style="width:100%" onclick="document.getElementById('modal11').style.display='block'" class="w3-hover-opacity" alt="Quiet ocean">
-
+        </p>
+        <p class="w3-container w3-padding-small">
       <img src="{% static 'home/imgs/work22.jpg' %}" style="width:100%" onclick="document.getElementById('modal22').style.display='block'" class="w3-hover-opacity" alt="The mist">
-  
+        </p>
+        <p class="w3-container w3-padding-small">
       <img src="{% static 'home/imgs/work33.jpg' %}" style="width:100%" onclick="document.getElementById('modal33').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
-
+        </p>
+        <p class="w3-container w3-padding-small">
       <img src="{% static 'home/imgs/work44.jpg' %}" style="width:100%" onclick="document.getElementById('modal44').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
         </p>
     </div>
 
     <div class="w3-third">
-        <p>
+        <p class="w3-container w3-padding-small">
+            <img src="{% static 'home/imgs/work000.jpg' %}" style="width:100%" onclick="document.getElementById('modal000').style.display='block'" class="w3-hover-opacity" alt="The mist over the mountains">
+        </p>
+        <p class="w3-container w3-padding-small">
       <img src="{% static 'home/imgs/work111.jpg' %}" style="width:100%" onclick="document.getElementById('modal111').style.display='block'" class="w3-hover-opacity" alt="Quiet ocean">
-
+        </p>
+        <p class="w3-container w3-padding-small">
       <img src="{% static 'home/imgs/work222.jpg' %}" style="width:100%" onclick="document.getElementById('modal222').style.display='block'" class="w3-hover-opacity" alt="The mist">
-
+        </p>
+        <p class="w3-container w3-padding-small">
       <img src="{% static 'home/imgs/work333.jpg' %}" style="width:100%" onclick="document.getElementById('modal333').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
-  
+        </p>
+        <p class="w3-container w3-padding-small">
       <img src="{% static 'home/imgs/work444.jpg' %}" style="width:100%" onclick="document.getElementById('modal444').style.display='block'" class="w3-hover-opacity" alt="My beloved typewriter">
         </p>
     </div>
@@ -159,6 +175,12 @@
 </div>
 
 <!-- Modal for full size images on click-->
+<div id="modal0" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal0.jpg'%}">
+  </div>
+</div>
+
 <div id="modal1" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
     <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal1.jpg'%}">
@@ -183,6 +205,11 @@
   </div>
 </div>
 
+<div id="modal00" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal00.jpg'%}">
+  </div>
+</div>
 
 <div id="modal11" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
@@ -208,6 +235,11 @@
   </div>
 </div>
 
+<div id="modal000" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style ="width: 100%" src="{% static 'home/imgs/modal000.jpg'%}">
+  </div>
+</div>
 
 <div id="modal111" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
