@@ -74,6 +74,9 @@
     <Content Include="home\static\home\imgs\graphicwebdesigner.jpg" />
     <Content Include="home\static\home\imgs\logo.png" />
     <Content Include="home\static\home\imgs\logonav.png" />
+    <Content Include="home\static\home\imgs\modal0.jpg" />
+    <Content Include="home\static\home\imgs\modal00.jpg" />
+    <Content Include="home\static\home\imgs\modal000.jpg" />
     <Content Include="home\static\home\imgs\modal1.jpg" />
     <Content Include="home\static\home\imgs\modal11.jpg" />
     <Content Include="home\static\home\imgs\modal111.jpg" />
@@ -87,6 +90,10 @@
     <Content Include="home\static\home\imgs\modal44.jpg" />
     <Content Include="home\static\home\imgs\modal444.jpg" />
     <Content Include="home\static\home\imgs\portfolio.jpg" />
+    <Content Include="home\static\home\imgs\resume.pdf" />
+    <Content Include="home\static\home\imgs\work0.jpg" />
+    <Content Include="home\static\home\imgs\work00.jpg" />
+    <Content Include="home\static\home\imgs\work000.jpg" />
     <Content Include="home\static\home\imgs\work1-1.jpg" />
     <Content Include="home\static\home\imgs\work1.jpg" />
     <Content Include="home\static\home\imgs\work11.jpg" />
